@@ -16,6 +16,7 @@
 		19331C952C0C3C5100B1C460 /* UserInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19331C942C0C3C5100B1C460 /* UserInfoView.swift */; };
 		19331C972C0C4B6400B1C460 /* SwipeActionIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19331C962C0C4B6400B1C460 /* SwipeActionIndicatorView.swift */; };
 		19331C9A2C0C541A00B1C460 /* SizeConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19331C992C0C541A00B1C460 /* SizeConstants.swift */; };
+		19331C9C2C0D9A9000B1C460 /* ImageScollingOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19331C9B2C0D9A9000B1C460 /* ImageScollingOverlay.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		19331C942C0C3C5100B1C460 /* UserInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoView.swift; sourceTree = "<group>"; };
 		19331C962C0C4B6400B1C460 /* SwipeActionIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeActionIndicatorView.swift; sourceTree = "<group>"; };
 		19331C992C0C541A00B1C460 /* SizeConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SizeConstants.swift; sourceTree = "<group>"; };
+		19331C9B2C0D9A9000B1C460 /* ImageScollingOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageScollingOverlay.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,6 +168,7 @@
 				19331C942C0C3C5100B1C460 /* UserInfoView.swift */,
 				19331C912C0C35D400B1C460 /* CardView.swift */,
 				19331C962C0C4B6400B1C460 /* SwipeActionIndicatorView.swift */,
+				19331C9B2C0D9A9000B1C460 /* ImageScollingOverlay.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -253,6 +256,7 @@
 				19331C782C0C2B9500B1C460 /* ContentView.swift in Sources */,
 				19331C922C0C35D400B1C460 /* CardView.swift in Sources */,
 				19331C9A2C0C541A00B1C460 /* SizeConstants.swift in Sources */,
+				19331C9C2C0D9A9000B1C460 /* ImageScollingOverlay.swift in Sources */,
 				19331C762C0C2B9500B1C460 /* Car_HuntApp.swift in Sources */,
 				19331C952C0C3C5100B1C460 /* UserInfoView.swift in Sources */,
 			);
