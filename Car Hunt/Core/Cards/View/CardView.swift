@@ -13,7 +13,7 @@ struct CardView: View {
     @State private var currentImageIndex = 0
     
     
-    @State private var mockImages = ["blackCar", "redCar"]
+    @State private var mockImages = ["blackCar", "redCar","blackCar"]
     var body: some View {
         ZStack(alignment: .bottom){
             ZStack(alignment: .top){
@@ -25,6 +25,7 @@ struct CardView: View {
                     .overlay{
                         ImageScollingOverlay(imageCount: mockImages.count, currentImageIndex: $currentImageIndex)
                     }
+                CardImageIndicatorView(imageCount: mockImages.count, currentImageIndex: currentImageIndex)
                 SwipeActionIndicatorView(xOffset: $xOffset)
             }
             UserInfoView()
@@ -43,6 +44,22 @@ struct CardView: View {
     }
 }
 
+private extension CardView{
+    func returnToCenter(){
+        xOffset = 0
+        degress = 0
+        
+    }
+    func swipeRight(){
+        xOffset = 500
+        degress = 12
+    }
+    func swiprLeft(){
+        xOffset = -500
+        degress = -12
+
+    }
+}
 
 private extension CardView {
     func onDragChanged(_ value: _ChangedGesture<DragGesture>.Value){
@@ -52,10 +69,16 @@ private extension CardView {
     func onDragEnded(_ value: _ChangedGesture<DragGesture>.Value){
         let width = value.translation.width
         if abs(width) < abs(SizeConstants.screenCutoff) {
-            xOffset = 0
-            degress = 0
+           returnToCenter()
+            return
+        }
+        if width >= SizeConstants.screenCutoff{
+            swipeRight()
+        }else {
+            swiprLeft()
         }
     }
+    
    
 }
 

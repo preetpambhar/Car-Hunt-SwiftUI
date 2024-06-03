@@ -17,6 +17,8 @@
 		19331C972C0C4B6400B1C460 /* SwipeActionIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19331C962C0C4B6400B1C460 /* SwipeActionIndicatorView.swift */; };
 		19331C9A2C0C541A00B1C460 /* SizeConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19331C992C0C541A00B1C460 /* SizeConstants.swift */; };
 		19331C9C2C0D9A9000B1C460 /* ImageScollingOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19331C9B2C0D9A9000B1C460 /* ImageScollingOverlay.swift */; };
+		19331C9E2C0E4BEA00B1C460 /* CardImageIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19331C9D2C0E4BEA00B1C460 /* CardImageIndicatorView.swift */; };
+		19331CA02C0E542B00B1C460 /* CardStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19331C9F2C0E542B00B1C460 /* CardStackView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +33,8 @@
 		19331C962C0C4B6400B1C460 /* SwipeActionIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeActionIndicatorView.swift; sourceTree = "<group>"; };
 		19331C992C0C541A00B1C460 /* SizeConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SizeConstants.swift; sourceTree = "<group>"; };
 		19331C9B2C0D9A9000B1C460 /* ImageScollingOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageScollingOverlay.swift; sourceTree = "<group>"; };
+		19331C9D2C0E4BEA00B1C460 /* CardImageIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardImageIndicatorView.swift; sourceTree = "<group>"; };
+		19331C9F2C0E542B00B1C460 /* CardStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardStackView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +98,7 @@
 		19331C842C0C2EC000B1C460 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				19331CA12C0E58E800B1C460 /* Users */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -169,6 +174,8 @@
 				19331C912C0C35D400B1C460 /* CardView.swift */,
 				19331C962C0C4B6400B1C460 /* SwipeActionIndicatorView.swift */,
 				19331C9B2C0D9A9000B1C460 /* ImageScollingOverlay.swift */,
+				19331C9D2C0E4BEA00B1C460 /* CardImageIndicatorView.swift */,
+				19331C9F2C0E542B00B1C460 /* CardStackView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -179,6 +186,13 @@
 				19331C992C0C541A00B1C460 /* SizeConstants.swift */,
 			);
 			path = Constants;
+			sourceTree = "<group>";
+		};
+		19331CA12C0E58E800B1C460 /* Users */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Users;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -255,6 +269,8 @@
 				19331C972C0C4B6400B1C460 /* SwipeActionIndicatorView.swift in Sources */,
 				19331C782C0C2B9500B1C460 /* ContentView.swift in Sources */,
 				19331C922C0C35D400B1C460 /* CardView.swift in Sources */,
+				19331C9E2C0E4BEA00B1C460 /* CardImageIndicatorView.swift in Sources */,
+				19331CA02C0E542B00B1C460 /* CardStackView.swift in Sources */,
 				19331C9A2C0C541A00B1C460 /* SizeConstants.swift in Sources */,
 				19331C9C2C0D9A9000B1C460 /* ImageScollingOverlay.swift in Sources */,
 				19331C762C0C2B9500B1C460 /* Car_HuntApp.swift in Sources */,
