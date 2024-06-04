@@ -8,28 +8,31 @@
 import SwiftUI
 
 struct CardView: View {
+    
+    
     @State private var  xOffset: CGFloat = 0
     @State private var degress: Double = 0
     @State private var currentImageIndex = 0
+    @ObservedObject var viewModel: CardsViewModel
     
     
-    @State private var mockImages = ["blackCar", "redCar","blackCar"]
+    let model: CardModel
     var body: some View {
         ZStack(alignment: .bottom){
             ZStack(alignment: .top){
-                Image(mockImages[currentImageIndex])
+                Image(user.profileImageURLs[currentImageIndex])
                     .resizable()
                     .scaledToFill()
                     .frame(width: SizeConstants.cardWidth, height: SizeConstants.cardHeight)
                     .clipped()
                     .overlay{
-                        ImageScollingOverlay(imageCount: mockImages.count, currentImageIndex: $currentImageIndex)
+                        ImageScollingOverlay(imageCount: imageCount, currentImageIndex: $currentImageIndex)
                     }
-                CardImageIndicatorView(imageCount: mockImages.count, currentImageIndex: currentImageIndex)
+                CardImageIndicatorView(imageCount: imageCount, currentImageIndex: currentImageIndex)
                 SwipeActionIndicatorView(xOffset: $xOffset)
             }
-            UserInfoView()
-              
+            UserInfoView(user: user)
+            
         }
         .frame(width: SizeConstants.cardWidth, height: SizeConstants.cardHeight)
         .clipShape(RoundedRectangle(cornerRadius: 10))
@@ -44,6 +47,14 @@ struct CardView: View {
     }
 }
 
+private extension CardView {
+    var user: User {
+        return model.user
+    }
+    var imageCount: Int {
+        return user.profileImageURLs.count
+    }
+}
 private extension CardView{
     func returnToCenter(){
         xOffset = 0
@@ -51,13 +62,21 @@ private extension CardView{
         
     }
     func swipeRight(){
-        xOffset = 500
-        degress = 12
+        withAnimation {
+            xOffset = 500
+            degress = 12
+        } completion: {
+            viewModel.removeCard(model)
+        }
+
     }
     func swiprLeft(){
-        xOffset = -500
-        degress = -12
-
+        withAnimation {
+            xOffset = -500
+            degress = -12
+        } completion: {
+            viewModel.removeCard(model)
+        }
     }
 }
 
@@ -69,7 +88,7 @@ private extension CardView {
     func onDragEnded(_ value: _ChangedGesture<DragGesture>.Value){
         let width = value.translation.width
         if abs(width) < abs(SizeConstants.screenCutoff) {
-           returnToCenter()
+            returnToCenter()
             return
         }
         if width >= SizeConstants.screenCutoff{
@@ -79,10 +98,13 @@ private extension CardView {
         }
     }
     
-   
+    
 }
 
 
 #Preview {
-    CardView()
+    CardView(
+        viewModel: CardsViewModel(service: CardService()),
+        model: CardModel( user: MockData.users[1])
+    )
 }
