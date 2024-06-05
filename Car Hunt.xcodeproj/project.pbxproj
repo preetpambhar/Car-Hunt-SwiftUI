@@ -21,9 +21,14 @@
 		19331CA02C0E542B00B1C460 /* CardStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19331C9F2C0E542B00B1C460 /* CardStackView.swift */; };
 		19331CA42C0E594D00B1C460 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19331CA32C0E594D00B1C460 /* User.swift */; };
 		19331CA72C0E59EB00B1C460 /* CardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19331CA62C0E59EB00B1C460 /* CardModel.swift */; };
-		19331CAA2C0E5C7800B1C460 /* CardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19331CA92C0E5C7800B1C460 /* CardViewModel.swift */; };
+		19331CAA2C0E5C7800B1C460 /* CardsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19331CA92C0E5C7800B1C460 /* CardsViewModel.swift */; };
 		19331CAD2C0E5D5200B1C460 /* CardService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19331CAC2C0E5D5200B1C460 /* CardService.swift */; };
 		19331CB02C0E604E00B1C460 /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19331CAF2C0E604E00B1C460 /* MockData.swift */; };
+		19331CB62C0EBEC300B1C460 /* SwipeActionButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19331CB52C0EBEC300B1C460 /* SwipeActionButtonView.swift */; };
+		19331CB82C0EC3C700B1C460 /* SwipeAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19331CB72C0EC3C700B1C460 /* SwipeAction.swift */; };
+		19331CBA2C0EDD7900B1C460 /* UserProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19331CB92C0EDD7900B1C460 /* UserProfileView.swift */; };
+		19331CBE2C101CB800B1C460 /* CurrentUserProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19331CBD2C101CB800B1C460 /* CurrentUserProfileView.swift */; };
+		19331CC02C101D3F00B1C460 /* CurrentUserProfileHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19331CBF2C101D3F00B1C460 /* CurrentUserProfileHeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,9 +47,14 @@
 		19331C9F2C0E542B00B1C460 /* CardStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardStackView.swift; sourceTree = "<group>"; };
 		19331CA32C0E594D00B1C460 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		19331CA62C0E59EB00B1C460 /* CardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardModel.swift; sourceTree = "<group>"; };
-		19331CA92C0E5C7800B1C460 /* CardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewModel.swift; sourceTree = "<group>"; };
+		19331CA92C0E5C7800B1C460 /* CardsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsViewModel.swift; sourceTree = "<group>"; };
 		19331CAC2C0E5D5200B1C460 /* CardService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardService.swift; sourceTree = "<group>"; };
 		19331CAF2C0E604E00B1C460 /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
+		19331CB52C0EBEC300B1C460 /* SwipeActionButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeActionButtonView.swift; sourceTree = "<group>"; };
+		19331CB72C0EC3C700B1C460 /* SwipeAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeAction.swift; sourceTree = "<group>"; };
+		19331CB92C0EDD7900B1C460 /* UserProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileView.swift; sourceTree = "<group>"; };
+		19331CBD2C101CB800B1C460 /* CurrentUserProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentUserProfileView.swift; sourceTree = "<group>"; };
+		19331CBF2C101D3F00B1C460 /* CurrentUserProfileHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentUserProfileHeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +173,8 @@
 		19331C8A2C0C2FC100B1C460 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				19331CBC2C101C7C00B1C460 /* CurrentUserProfile */,
+				19331CBB2C101C7100B1C460 /* UserProfile */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -190,6 +202,7 @@
 				19331C9B2C0D9A9000B1C460 /* ImageScollingOverlay.swift */,
 				19331C9D2C0E4BEA00B1C460 /* CardImageIndicatorView.swift */,
 				19331C9F2C0E542B00B1C460 /* CardStackView.swift */,
+				19331CB52C0EBEC300B1C460 /* SwipeActionButtonView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -222,6 +235,7 @@
 			isa = PBXGroup;
 			children = (
 				19331CA62C0E59EB00B1C460 /* CardModel.swift */,
+				19331CB72C0EC3C700B1C460 /* SwipeAction.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -229,7 +243,7 @@
 		19331CA82C0E5C4A00B1C460 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				19331CA92C0E5C7800B1C460 /* CardViewModel.swift */,
+				19331CA92C0E5C7800B1C460 /* CardsViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -248,6 +262,23 @@
 				19331CAF2C0E604E00B1C460 /* MockData.swift */,
 			);
 			path = MockData;
+			sourceTree = "<group>";
+		};
+		19331CBB2C101C7100B1C460 /* UserProfile */ = {
+			isa = PBXGroup;
+			children = (
+				19331CB92C0EDD7900B1C460 /* UserProfileView.swift */,
+			);
+			path = UserProfile;
+			sourceTree = "<group>";
+		};
+		19331CBC2C101C7C00B1C460 /* CurrentUserProfile */ = {
+			isa = PBXGroup;
+			children = (
+				19331CBD2C101CB800B1C460 /* CurrentUserProfileView.swift */,
+				19331CBF2C101D3F00B1C460 /* CurrentUserProfileHeaderView.swift */,
+			);
+			path = CurrentUserProfile;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -321,16 +352,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				19331C902C0C309C00B1C460 /* MainTabView.swift in Sources */,
+				19331CBE2C101CB800B1C460 /* CurrentUserProfileView.swift in Sources */,
+				19331CBA2C0EDD7900B1C460 /* UserProfileView.swift in Sources */,
 				19331CAD2C0E5D5200B1C460 /* CardService.swift in Sources */,
+				19331CC02C101D3F00B1C460 /* CurrentUserProfileHeaderView.swift in Sources */,
 				19331C972C0C4B6400B1C460 /* SwipeActionIndicatorView.swift in Sources */,
+				19331CB62C0EBEC300B1C460 /* SwipeActionButtonView.swift in Sources */,
 				19331C782C0C2B9500B1C460 /* ContentView.swift in Sources */,
+				19331CB82C0EC3C700B1C460 /* SwipeAction.swift in Sources */,
 				19331CB02C0E604E00B1C460 /* MockData.swift in Sources */,
 				19331C922C0C35D400B1C460 /* CardView.swift in Sources */,
 				19331C9E2C0E4BEA00B1C460 /* CardImageIndicatorView.swift in Sources */,
 				19331CA72C0E59EB00B1C460 /* CardModel.swift in Sources */,
 				19331CA02C0E542B00B1C460 /* CardStackView.swift in Sources */,
 				19331C9A2C0C541A00B1C460 /* SizeConstants.swift in Sources */,
-				19331CAA2C0E5C7800B1C460 /* CardViewModel.swift in Sources */,
+				19331CAA2C0E5C7800B1C460 /* CardsViewModel.swift in Sources */,
 				19331C9C2C0D9A9000B1C460 /* ImageScollingOverlay.swift in Sources */,
 				19331C762C0C2B9500B1C460 /* Car_HuntApp.swift in Sources */,
 				19331C952C0C3C5100B1C460 /* UserInfoView.swift in Sources */,

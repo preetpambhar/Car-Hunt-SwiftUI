@@ -14,7 +14,7 @@ struct CardView: View {
     @State private var degress: Double = 0
     @State private var currentImageIndex = 0
     @ObservedObject var viewModel: CardsViewModel
-    
+    @State private var showProfileModel = false
     
     let model: CardModel
     var body: some View {
@@ -31,9 +31,14 @@ struct CardView: View {
                 CardImageIndicatorView(imageCount: imageCount, currentImageIndex: currentImageIndex)
                 SwipeActionIndicatorView(xOffset: $xOffset)
             }
-            UserInfoView(user: user)
-            
+            UserInfoView(showProfileModel: $showProfileModel, user: user)
         }
+        .fullScreenCover(isPresented: $showProfileModel) {
+            UserProfileView(user: user)
+        }
+        .onReceive(viewModel.$buttonSwipeAction, perform: { action in
+            onReceiveSwipeAction(action)
+        })
         .frame(width: SizeConstants.cardWidth, height: SizeConstants.cardHeight)
         .clipShape(RoundedRectangle(cornerRadius: 10))
         .offset(x: xOffset)
@@ -76,6 +81,20 @@ private extension CardView{
             degress = -12
         } completion: {
             viewModel.removeCard(model)
+        }
+    }
+    func onReceiveSwipeAction(_ action: SwipeAction? ){
+        guard let action else{ return }
+        
+        let topCard = viewModel.cardModels.last
+        
+        if topCard == model {
+            switch action {
+            case .reject:
+                swiprLeft()
+            case .like:
+                swipeRight()
+            }
         }
     }
 }
