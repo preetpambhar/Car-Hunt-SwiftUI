@@ -29,6 +29,9 @@
 		19331CBA2C0EDD7900B1C460 /* UserProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19331CB92C0EDD7900B1C460 /* UserProfileView.swift */; };
 		19331CBE2C101CB800B1C460 /* CurrentUserProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19331CBD2C101CB800B1C460 /* CurrentUserProfileView.swift */; };
 		19331CC02C101D3F00B1C460 /* CurrentUserProfileHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19331CBF2C101D3F00B1C460 /* CurrentUserProfileHeaderView.swift */; };
+		19331CC32C10345500B1C460 /* EditProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19331CC22C10345500B1C460 /* EditProfileView.swift */; };
+		19331CC52C10368800B1C460 /* ProfileImageGrideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19331CC42C10368800B1C460 /* ProfileImageGrideView.swift */; };
+		19331CC82C10D7EF00B1C460 /* UserMatchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19331CC72C10D7EF00B1C460 /* UserMatchView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +58,9 @@
 		19331CB92C0EDD7900B1C460 /* UserProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileView.swift; sourceTree = "<group>"; };
 		19331CBD2C101CB800B1C460 /* CurrentUserProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentUserProfileView.swift; sourceTree = "<group>"; };
 		19331CBF2C101D3F00B1C460 /* CurrentUserProfileHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentUserProfileHeaderView.swift; sourceTree = "<group>"; };
+		19331CC22C10345500B1C460 /* EditProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileView.swift; sourceTree = "<group>"; };
+		19331CC42C10368800B1C460 /* ProfileImageGrideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileImageGrideView.swift; sourceTree = "<group>"; };
+		19331CC72C10D7EF00B1C460 /* UserMatchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserMatchView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +141,7 @@
 			isa = PBXGroup;
 			children = (
 				19331C892C0C2FB300B1C460 /* Cards */,
+				19331CC62C10D7C400B1C460 /* Matches */,
 				19331C8C2C0C2FD900B1C460 /* Messaging */,
 				19331C8A2C0C2FC100B1C460 /* Profile */,
 				19331C8B2C0C2FC800B1C460 /* Search  */,
@@ -174,6 +181,7 @@
 			isa = PBXGroup;
 			children = (
 				19331CBC2C101C7C00B1C460 /* CurrentUserProfile */,
+				19331CC12C10343300B1C460 /* EditProfile  */,
 				19331CBB2C101C7100B1C460 /* UserProfile */,
 			);
 			path = Profile;
@@ -281,6 +289,23 @@
 			path = CurrentUserProfile;
 			sourceTree = "<group>";
 		};
+		19331CC12C10343300B1C460 /* EditProfile  */ = {
+			isa = PBXGroup;
+			children = (
+				19331CC22C10345500B1C460 /* EditProfileView.swift */,
+				19331CC42C10368800B1C460 /* ProfileImageGrideView.swift */,
+			);
+			path = "EditProfile ";
+			sourceTree = "<group>";
+		};
+		19331CC62C10D7C400B1C460 /* Matches */ = {
+			isa = PBXGroup;
+			children = (
+				19331CC72C10D7EF00B1C460 /* UserMatchView.swift */,
+			);
+			path = Matches;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -351,6 +376,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19331CC32C10345500B1C460 /* EditProfileView.swift in Sources */,
 				19331C902C0C309C00B1C460 /* MainTabView.swift in Sources */,
 				19331CBE2C101CB800B1C460 /* CurrentUserProfileView.swift in Sources */,
 				19331CBA2C0EDD7900B1C460 /* UserProfileView.swift in Sources */,
@@ -363,6 +389,7 @@
 				19331CB02C0E604E00B1C460 /* MockData.swift in Sources */,
 				19331C922C0C35D400B1C460 /* CardView.swift in Sources */,
 				19331C9E2C0E4BEA00B1C460 /* CardImageIndicatorView.swift in Sources */,
+				19331CC82C10D7EF00B1C460 /* UserMatchView.swift in Sources */,
 				19331CA72C0E59EB00B1C460 /* CardModel.swift in Sources */,
 				19331CA02C0E542B00B1C460 /* CardStackView.swift in Sources */,
 				19331C9A2C0C541A00B1C460 /* SizeConstants.swift in Sources */,
@@ -370,6 +397,7 @@
 				19331C9C2C0D9A9000B1C460 /* ImageScollingOverlay.swift in Sources */,
 				19331C762C0C2B9500B1C460 /* Car_HuntApp.swift in Sources */,
 				19331C952C0C3C5100B1C460 /* UserInfoView.swift in Sources */,
+				19331CC52C10368800B1C460 /* ProfileImageGrideView.swift in Sources */,
 				19331CA42C0E594D00B1C460 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
