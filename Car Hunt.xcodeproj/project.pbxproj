@@ -32,6 +32,7 @@
 		19331CC32C10345500B1C460 /* EditProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19331CC22C10345500B1C460 /* EditProfileView.swift */; };
 		19331CC52C10368800B1C460 /* ProfileImageGrideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19331CC42C10368800B1C460 /* ProfileImageGrideView.swift */; };
 		19331CC82C10D7EF00B1C460 /* UserMatchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19331CC72C10D7EF00B1C460 /* UserMatchView.swift */; };
+		19331CCB2C10F08700B1C460 /* MatchManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19331CCA2C10F08700B1C460 /* MatchManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,6 +62,7 @@
 		19331CC22C10345500B1C460 /* EditProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileView.swift; sourceTree = "<group>"; };
 		19331CC42C10368800B1C460 /* ProfileImageGrideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileImageGrideView.swift; sourceTree = "<group>"; };
 		19331CC72C10D7EF00B1C460 /* UserMatchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserMatchView.swift; sourceTree = "<group>"; };
+		19331CCA2C10F08700B1C460 /* MatchManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -301,9 +303,26 @@
 		19331CC62C10D7C400B1C460 /* Matches */ = {
 			isa = PBXGroup;
 			children = (
-				19331CC72C10D7EF00B1C460 /* UserMatchView.swift */,
+				19331CCC2C10F4C400B1C460 /* View */,
+				19331CC92C10F07000B1C460 /* Manager */,
 			);
 			path = Matches;
+			sourceTree = "<group>";
+		};
+		19331CC92C10F07000B1C460 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				19331CCA2C10F08700B1C460 /* MatchManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		19331CCC2C10F4C400B1C460 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				19331CC72C10D7EF00B1C460 /* UserMatchView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -389,6 +408,7 @@
 				19331CB02C0E604E00B1C460 /* MockData.swift in Sources */,
 				19331C922C0C35D400B1C460 /* CardView.swift in Sources */,
 				19331C9E2C0E4BEA00B1C460 /* CardImageIndicatorView.swift in Sources */,
+				19331CCB2C10F08700B1C460 /* MatchManager.swift in Sources */,
 				19331CC82C10D7EF00B1C460 /* UserMatchView.swift in Sources */,
 				19331CA72C0E59EB00B1C460 /* CardModel.swift in Sources */,
 				19331CA02C0E542B00B1C460 /* CardStackView.swift in Sources */,

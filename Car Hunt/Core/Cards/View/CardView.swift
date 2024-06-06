@@ -9,7 +9,7 @@ import SwiftUI
 
 struct CardView: View {
     
-    
+    @EnvironmentObject var matchManager: MatchManager
     @State private var  xOffset: CGFloat = 0
     @State private var degress: Double = 0
     @State private var currentImageIndex = 0
@@ -73,7 +73,7 @@ private extension CardView{
         } completion: {
             viewModel.removeCard(model)
         }
-
+        matchManager.checkForMatch(withuser: user)
     }
     func swiprLeft(){
         withAnimation {
